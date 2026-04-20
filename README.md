@@ -1,46 +1,38 @@
 # Bright-TV-Viewership-Analytics
-
-Retail Sales Analysis Project
-This project focuses on performing an in-depth exploratory data analysis (EDA) of a retail sales dataset to uncover patterns, trends, and insights that can drive business decision-making.
-
 Problem Statement
-The business lacks a consolidated view of its sales performance and customer purchasing behavior. Without analyzing historical transaction data, it is difficult to identify which product categories are most profitable, which customer segments (by age and gender) contribute most to revenue, and how sales fluctuate throughout the year. This lack of insight hinders effective inventory management and targeted marketing.
+Broadcasters and advertisers face challenges in understanding how different audience segments consume content across various time slots and genres. Without a clear data-driven view of viewership trends, networks struggle to optimize their programming schedules, and advertisers fail to target the most relevant demographics, leading to inefficient ad spend and lower engagement rates.
 
 Aim of the Project
-The primary aim is to analyze the retail sales dataset to evaluate business performance, understand customer demographics, and identify seasonal trends to provide actionable insights for growth.
+The primary aim of this project is to analyze viewership data to identify peak viewing times, popular content genres, and key audience demographic trends to improve content scheduling and advertising strategies.
 
 Objectives (Steps Taken to Solve)
-To achieve the project aim, the following steps were executed:
+To achieve the project aim, the following steps were implemented:
 
-Data Acquisition: Loaded the retail_sales_dataset.csv containing 1,000 transaction records.
+Data Collection: Aggregated viewership records, including timestamps, channel IDs, program genres, and viewer demographic data (age, region, device type).
 
-Data Cleaning & Preprocessing: * Checked for missing values and duplicates.
+Data Cleaning: Handled missing values in viewership duration and standardized genre categories across different networks.
 
-Converted the Date column into a datetime format for time-series analysis.
+Time-Slot Analysis: Categorized viewing data into Morning, Afternoon, Prime Time, and Late Night to identify peak usage periods.
 
-Descriptive Statistical Analysis: Calculated key metrics such as mean, median, and standard deviation for age, quantity, and price.
+Genre Affinity Mapping: Correlated demographic groups (e.g., Gen Z, Millennials, Boomers) with specific content genres like News, Sports, Reality TV, and Drama.
 
-Customer Demographics Analysis: Grouped data by Gender and Age to identify the core customer base.
+Retention Rate Calculation: Analyzed "channel flipping" behavior to determine which programs successfully retained viewers from start to finish.
 
-Product Performance Analysis: Aggregated sales data by Product Category to determine top-performing items.
-
-Time-Series Analysis: Resampled data by month to identify peak sales periods and seasonal trends.
+Trend Visualization: Developed visual dashboards to represent viewership fluctuations over weeks and months.
 
 Summary of Results
-Total Revenue: The total sales recorded across all transactions amounted to $456,000.
+Prime Time Dominance: Viewership peaks consistently between 8:00 PM and 10:00 PM, with Drama and Live Sports capturing 65% of the total audience during these hours.
 
-Top Category: Electronics is the highest revenue-generating category ($156,905), while Clothing saw the highest volume of units sold (894).
+Demographic Shifts: Younger audiences (18-24) showed a 40% higher preference for Streaming/Connected TV devices compared to traditional cable, predominantly consuming Reality TV and Comedy.
 
-Customer Insights: * The average customer age is 41 years.
+News Consistency: News programming maintains the most stable viewership levels throughout the day, showing high loyalty among viewers aged 50+.
 
-Female customers accounted for a slightly higher share of total revenue ($232,840) compared to male customers ($223,160).
-
-Seasonal Trends: May 2023 was the most successful month for the business, followed by October and December, indicating a potential boost during spring and year-end holidays.
+Engagement Insights: Programs with interactive social media components saw a 15% higher retention rate compared to traditional one-way broadcasts.
 
 Tools Used
-Programming Language: Python
+SQL: For querying large-scale viewership databases and aggregating audience metrics.
 
-DataBricks : *sql: For data manipulation and aggregation.
 
-Powerbi: For data visualization and trend plotting.
-Data Format: CSV (Comma Separated Values)
+Power BI: To create interactive heatmaps of viewership density by time and region.
+
+Excel: For initial data sorting and quick pivot table summaries.
